@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <div class="search">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="enter city name"
+          spellcheck="false"
+        />
+        <button onclick="searchCity()">
+          <img src="images/search.png" />
+        </button>
+      </div>
+
+      <div class="weather">
+        <img src="images/rain.png" class="weather-icon" />
+
+        <h1 class="temp">
+          <span id="temp">--</span>°C
+          <span class="weather-type">(<span id="weatherType">--</span>)</span>
+        </h1>
+
+        <h2 class="city" id="city">Search a City</h2>
+
+        <div class="details">
+          <div class="col">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity"><span id="humidity">--</span>%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+          <div class="col">
+            <img src="images/wind.png" />
+            <div>
+              
+              <p class="wind"><span id="wind">--</span> km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="extra-details">
+          <div class="item">
+            <span class="label">Max:</span>
+            <span class="value" id="max">--</span>°C
+          </div>
+
+          <div class="item">
+            <span class="label">Min:</span>
+            <span class="value" id="min">--</span>°C
+          </div>
+
+          <div class="item">
+            <span class="label">Pressure:</span>
+            <span class="value" id="pressure">--</span> hPa
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
